@@ -1,0 +1,30 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools", "wheel"]  # PEP 508 specifications.
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pj-custom-actions"
+version = "2024.12.1"
+requires-python = ">=3.11"
+dependencies = [
+    "Flask==3.1.0",
+    "marshmallow==3.23.2",
+    "webargs==8.6.0",
+    "python-dotenv==1.0.1",
+]
+
+authors = [
+  {name = "Rizwan Ali", email = "rizwan.ali@purelogics.net"},
+]
+maintainers = [
+  {name = "Rizwan Ali", email = "rizwan.ali@purelogics.net"},
+]
+
+readme = "README.md"
+
+
+[project.optional-dependencies]
+dev = [
+    "pip-tools==7.3.0",
+]
